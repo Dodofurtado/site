@@ -2,32 +2,118 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Site One Page</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Seu Produto Hotmart – Acesse Agora!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts e Ícones -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #ff6a00 0%, #ee0979 100%);
+      color: #fff;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(0,0,0,0.8);
+      padding: 2.5rem 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      max-width: 350px;
+      text-align: center;
+      animation: fadeIn 1.2s;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ffb347 0%, #ff416c 100%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 2rem;
+      box-shadow: 0 4px 16px rgba(255,65,108,0.2);
+      text-decoration: none;
+      margin-bottom: 1.3rem;
+      transition: transform 0.15s, box-shadow 0.15s;
+      animation: pulse 2s infinite;
+    }
+    .cta-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 8px 32px rgba(255,65,108,0.3);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,65,108,0.7); }
+      70% { box-shadow: 0 0 0 16px rgba(255,65,108,0);}
+      100% { box-shadow: 0 0 0 0 rgba(255,65,108,0);}
+    }
+    .social-links {
+      margin-top: 1.5rem;
+    }
+    .social-links a {
+      color: #fff;
+      margin: 0 0.6rem;
+      font-size: 1.5rem;
+      transition: color 0.2s;
+    }
+    .social-links a:hover {
+      color: #ffb347;
+    }
+    .trust-badges {
+      margin-top: 1.7rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+    .trust-badges img {
+      height: 30px;
+      filter: grayscale(70%);
+      opacity: 0.8;
+    }
+    @media (max-width: 400px) {
+      .container { padding: 1.2rem 0.5rem; }
+      h1 { font-size: 1.2rem;}
+      .cta-btn { padding: 0.7rem 1.1rem; font-size: 1rem;}
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Bem-vindo ao Meu Site!</h1>
-    <p>Este é um modelo simples de página única.</p>
-  </header>
-  <section id="sobre">
-    <h2>Sobre</h2>
-    <p>Este site foi criado como exemplo de uma landing page para GitHub Pages.</p>
-  </section>
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Web Design</li>
-      <li>Desenvolvimento Front-End</li>
-      <li>Consultoria</li>
-    </ul>
-  </section>
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
-  </section>
-  <footer>
-    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
-  </footer>
+  <div class="container">
+    <h1><i class="fa fa-fire"></i> Oferta Exclusiva Hotmart!</h1>
+    <p>Descubra como transformar sua vida com nosso curso digital top de vendas. Vagas limitadas! Aproveite a condição especial de lançamento:</p>
+    <a class="cta-btn" href="https://hotmart.com/SEU-LINK-AQUI" target="_blank">
+      QUERO GARANTIR MEU ACESSO <i class="fa fa-arrow-right"></i>
+    </a>
+    <div class="trust-badges">
+      <img src="https://logodownload.org/wp-content/uploads/2016/11/hotmart-logo-3.png" alt="Hotmart" title="Compra 100% Segura">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/SSL_Logo.png" alt="SSL" title="Ambiente Protegido">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Email_Icon.png" alt="Suporte" title="Suporte Rápido">
+    </div>
+    <div class="social-links">
+      <a href="https://instagram.com/SEU_PERFIL" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/SEU_NUMERO" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:SEUEMAIL@exemplo.com" title="E-mail"><i class="fa fa-envelope"></i></a>
+    </div>
+    <p style="font-size:0.9rem;opacity:.7;margin-top:1.2rem">Garantia Hotmart • Checkout 100% Seguro • Suporte Rápido</p>
+  </div>
 </body>
 </html>
